@@ -1,27 +1,19 @@
+// E1
 
 function esPrimo(numero) {
 
-    if (numero <= 1 || (numero % 2 == 0 && numero != 2)) //Sí el número es menor o igual a 1, o sí el número es divisible por 2 y no es 2,
-        //entonces no es un Número Primo ya que por definición 1 y los menores a uno, no son primos.
-        //y cualquier número divisible por 2, salvo el 2, no es primo.
+    if (numero <= 1 || (numero % 2 == 0 && numero != 2))
 
         return `${numero}, no es un número Primo`;
 
-    for (let i = 3; i <= Math.sqrt(numero) | 0; i += 2) // definido lso números de 2 para abajo, podemos arrancar de 3, 
-        //que la condición de "i" sea "<=" a la raíz cuadrada del número,
-        // refiere a que sí número es divisible por algún número primo menor
-        // a la raiz de número, los superiores seran múltiplos de estos.
-        // Iteración de 2 en 2 se usa ya que ningun número par después del 2 
-        // es primo y no hace falta comprobarlo.
+    for (let i = 3; i <= Math.sqrt(numero) | 0; i += 2) 
 
 
-        if (numero % i == 0)                            // Entonces si el resto de la división entre Número y i es 0
-            // podemos decir que no va a ser un número primo
+        if (numero % i == 0)                           
 
             return `${numero}, no es un número Primo`;
 
-    return `${numero}, es un número Primo`;             // Al no cumplirse ninguna de las otras condiciones anteriores, quedaondo sólo que
-    // es un número primo
+    return `${numero}, es un número Primo`;             
 
 }
 
@@ -31,7 +23,7 @@ console.log(esPrimo(6));
 
 
 ///////////////////////////////////////////////////////////////////////////////////
-
+// E2
 
 
 function sumaMatrices(matriz1, matriz2) {
@@ -69,7 +61,9 @@ console.log(sumaMatrices([
     [1, 8, 3],
     [5, 2, 5],
     [2, 3, 5]]));
+
 //////////////////////////////////////////////////////////
+// E3
 
 function sumaRango(x, y) {
     rango = 0
@@ -84,6 +78,7 @@ console.log(sumaRango(1664, 5465132))
 
 
 ///////////////////////////////////////////////////////////////
+// E4
 
 function contarVocales(texto) {
 
@@ -101,7 +96,8 @@ function contarVocales(texto) {
 console.log(contarVocales("egfeaeIUGUIOFIOEUFIUefuiF   IUFGIOFG  eiugIUF EGIFeafe"))
 
 
-////////////////////////////////////// 
+//////////////////////////////////////
+// E5 
 
 function unico(listado) {
     let lista = listado.split(',');
@@ -129,6 +125,7 @@ console.log(unico("mirta, mirta, marta, jauna, mirta, josefa, marta, jauna, mirt
 
 
 /////////////////////////////////////////////////////////////////////
+// E6
 
 
 function invertirCadena(cadena) {
@@ -143,7 +140,7 @@ console.log(invertirCadena("Hola Mundo"));
 
 
 /////////////////////////////////////////////////////////////////////
-
+// DOM E1
 
 
 let carrusel = document.getElementById("carrusel");
@@ -175,6 +172,7 @@ prev.addEventListener("click", prevImg);
 
 
 ////////////////////////////////////////////////////
+// DOM E2
 
 let parrafo =document.getElementById("parrafo");
 let btn=document.getElementById("btn");
@@ -196,6 +194,9 @@ btn.addEventListener("click", cambiarTamaño);
 
 
 //////////////////////////////////////////////////////
+// DOM E3
+
+
 //t1
 let tarjeta=document.getElementById("tarjeta");
 let descripcion=document.getElementById("oculto");

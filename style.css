@@ -23,7 +23,8 @@ justify-content: center;
 cursor: pointer;
 transition: .03s;
 
-background-color: red;
+opacity: .5;
+background-color: black;
 
 margin: 0 20px 0 20px;
 width: 50px;
@@ -32,6 +33,7 @@ height: 60px;
 text-decoration: none;
 font-size: 40px;
 font-weight: bolder;
+color: white;
 }
 
 .next{
@@ -50,23 +52,38 @@ right: 0;
    
 }
 
+.texto{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    background-color:rgb(40, 40, 40) ;
+border-radius: 20px;
+    padding: 20px 40px 20px 40px;
+    color: white;
+}
 .btn{
 display: flex;
  justify-content: end;
 
+ background-color:rgb(40, 40, 40);
+
  margin: 50px;
 border-radius: 10px;
-border: solid 1px  red;
-padding: 5px;
+border: solid 1px rgb(151, 151, 151);
+padding: 15px;
 
 font-size: 14px;
-color: black;
+color: white;
 
 }
 
+.parrafo{
+    width: 400px;
+
+}
 
 .agrandarFuente{
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* ///////////////////////////////////////////////// */
@@ -84,10 +101,11 @@ color: black;
     flex-direction: column;
     
 
-    background-color: bisque;
+    background-color: rgb(40, 40, 40);
     width: 300px;
     padding: 10px;
 
+color: white;
 }
 
 .oculto{
